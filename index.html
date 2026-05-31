@@ -121,6 +121,31 @@ body{
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
+import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
 
+const firebaseConfig = {
+  apiKey: "AIzaSyBXzBEnf4CTHVm8JT52F-5q_BCSQu2GAOI",
+  authDomain: "souqi-c4155.firebaseapp.com",
+  projectId: "souqi-c4155",
+  storageBucket: "souqi-c4155.firebasestorage.app",
+  messagingSenderId: "29909520994",
+  appId: "1:29909520994:web:95deebca665c231080373b"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+async function loadProducts() {
+  const querySnapshot = await getDocs(collection(db, "products"));
+
+  querySnapshot.forEach((doc) => {
+    console.log(doc.data());
+  });
+}
+
+loadProducts();
+</script>
 </body>
 </html>
