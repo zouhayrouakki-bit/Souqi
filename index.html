@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Souqi</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+}
+
+.navbar{
+    background:#0056A6;
+}
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    height:80vh;
+    display:flex;
+    align-items:center;
+}
+
+.btn-souqi{
+    background:#00A651;
+    color:white;
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">SOUQI</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Produits</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Coopératives</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container text-center">
+<h1 class="display-4 fw-bold">SOUQI</h1>
+<p class="lead">Le terroir marocain à portée de main</p>
+<a href="#" class="btn btn-souqi btn-lg">Découvrir les produits</a>
+</div>
+</section>
+
+<section class="container py-5">
+<h2 class="text-center mb-4">Produits populaires</h2>
+
+<div class="row">
+
+<div class="col-md-3">
+<div class="card shadow">
+<img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924" class="card-img-top">
+<div class="card-body text-center">
+<h5>Miel</h5>
+<p>100% naturel</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card shadow">
+<img src="https://images.unsplash.com/photo-1615486363973-f79f6c2dc8f6" class="card-img-top">
+<div class="card-body text-center">
+<h5>Huile d'Argan</h5>
+<p>Qualité supérieure</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card shadow">
+<img src="https://images.unsplash.com/photo-1603048719539-9ecb5cf64f8e" class="card-img-top">
+<div class="card-body text-center">
+<h5>Safran</h5>
+<p>Origine Maroc</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card shadow">
+<img src="https://images.unsplash.com/photo-1508747703725-719777637510" class="card-img-top">
+<div class="card-body text-center">
+<h5>Amandes</h5>
+<p>Produit naturel</p>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer class="text-center text-white p-3" style="background:#0056A6;">
+© 2026 SOUQI - Tous droits réservés
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
